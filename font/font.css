@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'bold';
+    src: url('PT_Sans-Narrow-Web-Bold.eot');
+    src: local(※), url('PT_Sans-Narrow-Web-Bold.woff') format('woff')
+}
+@font-face {
+	font-family: 'regular';
+	src: url('PT_Sans-Narrow-Web-Regular.eot');
+	src: local(※), url('PT_Sans-Narrow-Web-Regular.woff') format('woff')
+}
