@@ -652,7 +652,7 @@
 		font-size: 12px;
 	}
 	.contact{
-		padding: 50px 0px;
+		padding: 50px 0;
 	}
 	.container h3{
 		font-size: 25px;
@@ -670,7 +670,7 @@
 	}
 	button.submit{
 		width: 90%;
-		padding: 10px 0px;
+		padding: 10px 0;
 		font-size: 16px;
 	}
 	#ft{
@@ -846,7 +846,7 @@
 		font-size: 12px;
 	}
 	.contact{
-		padding: 50px 0px;
+		padding: 50px 0;
 	}
 	.container h3{
 		font-size: 25px;
@@ -864,7 +864,7 @@
 	}
 	button.submit{
 		width: 90%;
-		padding: 10px 0px;
+		padding: 10px 0;
 		font-size: 16px;
 	}
 	#ft{
@@ -929,7 +929,7 @@
 		font-size: 16px;
 	}
 	.tx_bx p{
-		margin-top: 1Z%;
+		margin-top: 1%;
 		font-size: 12px;
 	}
 	.cont1{
@@ -1076,7 +1076,7 @@
 	}
 	.outer-menu .hamburger{
 		width: 25px;
-		height: 0px;
+		height: 0;
 	}
 }
 @media screen and (max-width: 479px) {
@@ -1105,7 +1105,7 @@
 		font-size: 16px;
 	}
 	.tx_bx p{
-		margin-top: 0%;
+		margin-top: 0;
 		font-size: 13px;
 	}
 	.cont1{
@@ -1251,7 +1251,7 @@
 	}
 	.outer-menu .hamburger{
 		width: 25px;
-		height: 0px;
+		height: 0;
 	}
 }
 @media screen and (min-width: 375px) and (max-width: 478px) {
@@ -1280,7 +1280,7 @@
 		font-size: 13px;
 	}
 	.tx_bx p{
-		margin-top: 0%;
+		margin-top: 0;
 		font-size: 12px;
 	}
 	.cont1{
@@ -1299,7 +1299,7 @@
 		font-weight: 300;
 	}
 	.wrap-about .w-content td.title{
-		padding-right: 0px;
+		padding-right: 0;
 	}
 	.wrap-about .w-content td.break{
 		padding-right: 5px;
@@ -1335,7 +1335,7 @@
 		height: 700px;
 	}
 	.con3_img{
-		position: none;
+		position: inherit;
 		margin: 0 auto;
 		height: 420px;
 		width: 65.6%;
@@ -1443,6 +1443,6 @@
 	}
 	.outer-menu .hamburger{
 		width: 25px;
-		height: 0px;
+		height: 0;
 	}
 }

@@ -51,7 +51,7 @@ body,html{
 	padding-bottom: 8%;
 }
 .tx_bx p{
-	font-family: 'regular';
+	font-family: 'regular', sans-serif;
 	font-size: 35px;
 	margin-top: 1%;
 }
@@ -85,7 +85,7 @@ body,html{
 .wrap-about .w-content td.title{
   padding-right: 10px;
   font-weight: 500;
-  font-family: 'bold';
+  font-family: 'bold', sans-serif;
 }
 .wrap-about .w-content td.break{
   padding-right: 15px;
@@ -111,7 +111,7 @@ body,html{
 	margin: 0 auto;
 }
 .cont2 p{
-	font-family: 'regular';
+	font-family: 'regular', sans-serif;
 	font-size: 20px;
 	color: #fff;
 }
@@ -129,7 +129,7 @@ body,html{
 	margin-bottom: 30px;
 }
 .g_mask{
-	width: 0%;
+	width: 0;
 	height: 100%;
 	position: absolute;
 	overflow: hidden;
@@ -137,9 +137,9 @@ body,html{
 .graph_out .per{
 	color: #ececec;
 	font-size: 17px;
-	font-family: 'regular';
+	font-family: 'regular', sans-serif;
 	margin-left: 103%;
-	margin-bottom: 0%;
+	margin-bottom: 0;
 }
 .cont3{
 	width: 70%;
@@ -159,7 +159,7 @@ body,html{
 	font-size: 40px;
 }
 .con3_tx p{
-	font-family: 'regular';
+	font-family: 'regular', sans-serif;
 	font-size: 15px;
 	padding-top: 5%;
 }
@@ -291,7 +291,7 @@ body,html{
 	opacity: 0.8;
 }
 .contact{
-	padding: 80px 0px;
+	padding: 80px 0;
 	width: 100%;
 	float: left;
 	background-color: #ececec;
@@ -306,7 +306,7 @@ body,html{
 	margin: 0 auto;
 }
 form input{
-	background: none repeat scroll 0% 0% #F7F6F6;
+	background: none repeat scroll 0 0 #F7F6F6;
 	padding: 15px;
 	width: 100%;
 	border-radius: 5px;
@@ -326,7 +326,7 @@ form textarea{
 	width: 100%;
     border-radius: 5px;
     box-shadow: none;
-    background: none repeat scroll 0% 0% #F7F6F6;
+    background: none repeat scroll 0 0 #F7F6F6;
     padding: 15px;
     font-size: 16px;
     font-weight: 400;
@@ -359,7 +359,7 @@ button.submit{
 	transition: background 0.3s ease-in;
 	cursor: pointer;
 	display: block;
-	margin: 30px auto 0px;
+	margin: 30px auto 0;
 	border-radius : 5px;
 	}
 button.submit:hover{
@@ -442,13 +442,11 @@ form textarea:focus{
   opacity: 0;
 }
 .outer-menu .checkbox-toggle:checked + .hamburger > div {
-  -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 .outer-menu .checkbox-toggle:checked + .hamburger > div:before,
 .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
   top: 0;
-  -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
@@ -459,7 +457,6 @@ form textarea:focus{
   visibility: visible;
 }
 .outer-menu .checkbox-toggle:checked ~ .menu > div {
-  -webkit-transform: scale(1);
           transform: scale(1);
   transition-duration: 0.75s;
 }
@@ -469,7 +466,6 @@ form textarea:focus{
 }
 
 .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
-  -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
 }
 .outer-menu .hamburger {
@@ -536,7 +532,6 @@ form textarea:focus{
   border-radius: 50%;
   transition: all 0.4s ease;
   flex: none;
-  -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
