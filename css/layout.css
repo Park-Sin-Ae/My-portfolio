@@ -129,10 +129,24 @@ body,html{
 	margin-bottom: 30px;
 }
 .g_mask{
-	width: 0;
+	width: 100%;
 	height: 100%;
 	position: absolute;
-	overflow: hidden;
+}
+
+.gr_ps {
+	width: 95%;
+	background: #ffdc7c;
+}
+
+.gr_illu {
+	width: 90%;
+	background: #ffdc7c;
+}
+
+.gr_jquery {
+	width: 80%;
+	background: #ffdc7c;
 }
 .graph_out .per{
 	color: #ececec;
