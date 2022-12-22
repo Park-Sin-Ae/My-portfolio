@@ -1,35 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>park sin ae</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="font/font.css">
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
-    <script id="rendered-js">
-        // No JavaScript required
-        //# sourceURL=pen.js
-    </script>
-    <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
-    <script>
-        skills();
-
-        $(document).ready(function () {
-            $('.primary-nav').onePageNav();
-        });
-        window.console = window.console || function (t) {
-        };
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/function.js"></script>
 </head>
 <body translate="no">
 <header id="hd">
@@ -61,14 +45,12 @@
     </div>
 </header>
 <div id="visual">
-    <img src="img/visual3.jpg" alt="">
+    <img src="img/visual.png" alt="비주얼이미지">
     <div class="main_bx">
         <div class="solid_box">
-            <div class="tx_bx white">
-                <h2>P O R T F O L I O</h2>
-                <p>Design</p>
-                <p>Idea</p>
-                <p>Create</p>
+            <div class="tx_bx">
+                <h2>I<span class="color-navy">'</span>M
+                    a UI/UX DESIGNER<span class="color-navy">.</span></h2>
             </div>
         </div>
     </div>
@@ -102,6 +84,11 @@
                     <td class="title">Kakao</td>
                     <td class="break">:</td>
                     <td> qkrtlsdo88@nate.com</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://github.com/Park-Sin-Ae" target="_blank">GitHub 바로가기</a>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -147,104 +134,103 @@
         </div>
     </div>
     <!--WORK-->
-    <div class="cont3" id="cont3">
-        <div class="con3_tx">
-            <h2>WORK</h2>
-            <p>모든 작품의 해상도는 1920X1080 에<br>최적화되어 있으며 이용 시<br>크롬 사용을 권장합니다.</p>
-        </div>
-        <div class="con3_img">
-            <ul>
+    <section id="cont3" class="cont3">
+        <h2>WORK</h2>
+        <div class="container">
+            <ul class="tab">
+                <li class="on"><a href="#">Saint Laurent</a></li>
+                <li><a href="#">CLEAN</a></li>
+                <li><a href="#">UIBOX</a></li>
+                <li><a href="#">UIBOOK</a></li>
+                <li><a href="#">SP</a></li>
+                <li><a href="#">기업 ERP</a></li>
+            </ul>
+
+            <ul class="view">
                 <li>
-                    <a href="http://tlsdo0116.dothome.co.kr/r7/index.html" target="_blank">
-                        <img src="img/ysl.png" alt="">
-                        <div class="ho_wrap1">
-                            <p class="desc">
-                                Saint Laurent
-                            </p>
-                            <span>Reponsive</span>
-                        </div>
-                    </a>
+                    <h3>Saint Laurent<span>(개인작업)</span></h3>
+                    <p>
+                        기존 사이트에서 불편함을 찾아 개선하고, <br>
+                        메인 화면과 서브 페이지를 제작하였습니다.
+                    </p>
+                    <p>
+                        사용 툴 : Photoshop, Atom<br>
+                        참여도 : 100%
+                    </p>
+                    <div class="view_img">메인화면 이미지 미리보기</div>
+                    <a href="https://kim-ji-min.github.io/sampyo/" target="_blank">바로가기</a>
+                </li>
+
+                <li>
+                    <h3>CLEAN</h3>
+                    <p>
+                        환경방사능 관련 회사 소개 웹이며, <br>
+                        웹표준을 준수하여 제작한 사이트입니다.
+                    </p>
+                    <p>
+                        사용 툴 : Photoshop, Figma, Zeplin, JetBrain <br>
+                        참여도 : 80%(퍼블리싱)
+                    </p>
+                    <div class="view_img">메인화면 이미지 미리보기</div>
+                    <a href="https://kim-ji-min.github.io/090Factory/" target="_blank">바로가기</a>
+                </li>
+
+                <li>
+                    <h3>UIBOX</h3>
+                    <p>
+                        안경원 전문 B2B 쇼핑몰로, <br>
+                        안경원 운영에 필요한 다양한 상품들을 구매할 수 있는 마켓입니다.
+                    </p>
+                    <p>
+                        사용 툴 : Photoshop, JetBrain, Angular <br>
+                        참여도 : 100%
+                    </p>
+                    <div class="view_img">메인화면 이미지 미리보기</div>
+                    <a href="https://kim-ji-min.github.io/history-of-blue/" target="_blank">바로가기</a>
                 </li>
                 <li>
-                    <a href="http://tlsdo0116.dothome.co.kr/r2/index.html" target="_blank">
-                        <img src="img/cafe.png" alt="">
-                        <div class="ho_wrap2">
-                            <p class="desc">
-                                PaulBassett
-                            </p>
-                            <span>Reponsive</span>
-                        </div>
-                    </a>
+                    <h3>UIBOOK</h3>
+                    <p>
+                        안경원 고객관리 서비스가 목적인 e-book을 제작하였습니다.<br>
+                        연령별로 구분되어 있어 서비스 응대를 원할하게 제공할 수 있습니다.
+                    </p>
+                    <p>
+                        사용 툴 : Photoshop, Illustrator<br>
+                        참여도 : 100%
+                    </p>
+                    <div class="view_img">메인화면 이미지 미리보기</div>
+                    <a href="images/ex_history.jpg" class="viewOpen">이미지 보기</a>
                 </li>
                 <li>
-                    <a href="http://tlsdo0116.dothome.co.kr/r1/index.html" target="_blank">
-                        <img src="img/piano.png" alt="">
-                        <div class="ho_wrap3">
-                            <p class="desc">
-                                Steinway&amp;Sons
-                            </p>
-                            <span>Reponsive</span>
-                        </div>
-                    </a>
+                    <h3>UISP</h3>
+                    <p>
+                        기존 안경원 고객관리 프로그램의 불편함을 해소하며,<br>
+                        클라우드 기반으로 설치 없이 쉽고 간편한 안경원 관리 프로그램입니다.
+                    </p>
+                    <p>
+                        사용 툴 : Photoshop, JetBrain, Angular<br>
+                        참여도 : 100%
+                    </p>
+                    <div class="view_img">메인화면 이미지 미리보기</div>
+                    <a href="images/ex_howon.jpg" class="viewOpen">이미지 보기</a>
                 </li>
+
                 <li>
-                    <a href="http://tlsdo0116.dothome.co.kr/r5/index.html" target="_blank">
-                        <img src="img/lush.png" alt="">
-                        <div class="ho_wrap4">
-                            <p class="desc">
-                                LUSH
-                            </p>
-                            <span>Reponsive</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://tlsdo0116.dothome.co.kr/r6/index.html" target="_blank">
-                        <img src="img/cj.png" alt="">
-                        <div class="ho_wrap5">
-                            <p class="desc">
-                                CJONE
-                            </p>
-                            <span>Reponsive</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://tlsdo0116.dothome.co.kr/r8/index.html" target="_blank">
-                        <img src="img/hanhwa.png" alt="">
-                        <div class="ho_wrap6">
-                            <p class="desc">
-                                Hanwha
-                            </p>
-                            <span>Web</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://tlsdo0116.dothome.co.kr/r3/index.html" target="_blank">
-                        <img src="img/manner_web.png" alt="">
-                        <div class="ho_wrap7">
-                            <p class="desc">
-                                Mannercar
-                            </p>
-                            <span>Web</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://tlsdo0116.dothome.co.kr/r4/index.html" target="_blank">
-                        <img src="img/manner_app.png" alt="">
-                        <div class="ho_wrap8">
-                            <p class="desc">
-                                Mannercar
-                            </p>
-                            <span>Mobile</span>
-                        </div>
-                    </a>
+                    <h3>기업 ERP</h3>
+                    <p>
+                        경영활동 프로세스들을 통합적으로 연계해 관리하고,<br>
+                        기업 정보를 공유하고 생성하는 기업 개발 및 운영프로그램입니다.
+                    </p>
+                    <p>
+                        사용 툴 : Photoshop, JetBrain, Angular<br>
+                        참여도 : 100%
+                    </p>
+                    <div class="view_img">메인화면 이미지 미리보기</div>
+                    <a href="images/ex_peach.jpg" class="viewOpen">이미지 보기</a>
                 </li>
             </ul>
         </div>
-    </div>
+    </section><!--end of portfolio-->
     <div class="contact" id="contact">
         <div class="container">
             <h3 class="text-head">CONTACT</h3>
@@ -264,15 +250,13 @@
         <a href="" class="ftim">
             <img src="img/ftlogo.png" alt="">
         </a>
-        <ul class="icon">
-            <li><a href=""><img src="img/face.png" alt=""></a></li>
-            <li><a href=""><img src="img/insta.png" alt=""></a></li>
-            <li><a href=""><img src="img/google.png" alt=""></a></li>
-        </ul>
     </div>
     <div class="copyright">
-        <p>COPYRIGHT &copy; 2019 SINAE LTD.ALL RIGHT RESERVED.</p>
+        <p>COPYRIGHT &copy; 2022 SINAE LTD.ALL RIGHT RESERVED.</p>
     </div>
 </footer>
 </body>
 </html>
+<script>
+    tab();
+</script>
