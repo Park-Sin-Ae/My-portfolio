@@ -75,8 +75,6 @@ body, html {
 }
 
 .wrap-about {
-    height: 100px;
-    width: 40%;
     display: block;
     min-height: 200px;
     position: absolute;
@@ -88,23 +86,25 @@ body, html {
     margin: 0 auto;
 }
 
-.wrap-about .w-content td {
+.wrap-about .w-content p {
     font-size: 19px;
     font-weight: 300;
 }
 
-.wrap-about .w-content td.title {
+.wrap-about .w-content p.title {
+    width: 100px;
     padding-right: 10px;
     font-weight: 500;
-    font-family: 'bold', sans-serif;
+    font-family: 'Noto Sans KR Bold', sans-serif;
 }
 
-.wrap-about .w-content td.break {
+.wrap-about .w-content p.break {
     padding-right: 15px;
 }
 
-.wrap-about .w-content tr {
+.wrap-about .w-content div {
     height: 35px;
+    display: flex;
 }
 
 /*---------------- a. Skills ----------------*/
@@ -232,6 +232,7 @@ body, html {
     text-indent: -9999px;
     background-color: #fff;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 /* portfolio */
@@ -296,7 +297,6 @@ body, html {
 #cont3 > .container > .view {
     position: relative;
     width: 1200px;
-    height: 540px;
 }
 
 #cont3 > .container > .view > li {
@@ -329,14 +329,15 @@ body, html {
 
 #cont3 > .container > .view > li > .view_img {
     position: absolute;
-    left: 30%;
     top: 80px;
     width: 850px;
     height: 500px;
     text-indent: -9999px;
-    background : url(../img/saint.png) 100% 100% no-repeat;
+    background : url(../img/saint.png) no-repeat;
 }
-
+#cont3 > .container > .view > li:nth-child(1) > .view_img, #cont3 > .container > .view > li:nth-child(2) > .view_img {
+    right: -10%;
+}
 #cont3 > .container > .view > li:nth-child(2) > .view_img {
     background-image: url(../img/clean.png);
 }
@@ -346,6 +347,7 @@ body, html {
 }
 
 #cont3 > .container > .view > li:nth-child(4) > .view_img {
+    right: -30%;
     background-image: url(../img/uibook.png);
 }
 
@@ -355,6 +357,10 @@ body, html {
 
 #cont3 > .container > .view > li:nth-child(6) > .view_img {
     background-image: url(../img/erp.png);
+}
+
+#cont3 > .container > .view > li:nth-child(3) > .view_img, #cont3 > .container > .view > li:nth-child(5) > .view_img, #cont3 > .container > .view > li:nth-child(6) > .view_img {
+    right: -30%;
 }
 
 #cont3 > .container > .view > li > a {
